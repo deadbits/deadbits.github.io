@@ -4,11 +4,17 @@
   quote: >
     Omnibus is a plugin based framework for OSINT (Open-source intelligence) artifact management, collection, and research.
   description: |
-    An Omnibus is typically a volume containing several novels or other items previously published separately. That is exactly what this project intends to be for OSINT collection, research, and artifact management. With an easy to use interactive command line interface, users are able to create sessions to investigate various artifacts such as IP addresses, domain names, email addresses, user names, file hashes, Bitcoin addresses, and even more as the project continues to grow. Since the platform is built in a modular fashion, it is simple to add new functionality and have users create their own custom modules.
+    An Omnibus is typically a volume containing several novels or other items previously published separately. That is exactly what this project intends to be for OSINT collection, research, and artifact management.
+    With an easy to use interactive command line interface, users are able to create sessions to investigate various artifacts such as IP addresses, domain names, email addresses, user names, file hashes, Bitcoin addresses, and even more as the project continues to grow.
+    Since the platform is built in a modular fashion, it is simple to add new functionality and have users create their own custom modules.
 
 - name: Aleph v2
   link: https://aleph.re/
   quote: >
-    Aleph is a fully asynchronous open-source malware sample dissection pipeline written in Python 3 and built on top of Celery.
+    Aleph is a fully asynchronous open-source malware sample dissection pipeline, written in Python 3 and built on top of Celery and RabbitMQ, making it scalable and resilient.
   description: |
-    Aleph is made by and for threat intelligence researchers and malware reverse engineers. Using several built-in collectors (local, S3, IMAP, POP, etc.), Aleph ingests samples that are sent to workers which apply processors specific to the file type and carve out information and data. From there the extracted data is used in analyzers to run intelligence analysis and enrichment on the combined output of all processors. Data is persisted in Elasticsearch for quick access when using the web UI or CLI for queries, and scales very well when combined with the RabbitMQ and Celery back-end components. Check out the website for more information on this project and future releases!
+    Aleph is made by and for threat intelligence researchers and malware reverse engineers. Using several pre-built collectors (local folder, S3 buckets, IMAP, POP, etc.), Aleph ingests samples that are dispatched to processor workers specific to the file type, then carve out useful information and metadata.
+    From there, the extracted data is used in analyzer modules to run intelligence analysis and enrichment on the combined output of all processors.
+    All threat and meta data is persisted in Elasticsearch for quick access whether using the web interface or command line. Combined with the RabbitMQ and Celery back-end components, this makes for an incredibly fast, scalable, and reliable automated malware analysis pipeline.
+
+    Check out the website for more information and future releases!
