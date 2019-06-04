@@ -1,7 +1,14 @@
-- name: Super awesome project
-  link: github.com/sproogen
-  github: sproogen/resume-theme
+- name: Omnibus
+  link: https://github.com/InQuest/Omnibus
+  github: https://github.com/InQuest/Omnibus
   quote: >
-    This is probably one of the greatest apps ever created, if you don't agree you're probably wrong.
-  description: | # this will include new lines to allow paragraphs
-    I started this project as a way if learning <mark>React</mark> and it has since grown into a fully fledged app. I have learned many skills through this and been I'm very proud of having this in my portfolio. If you don't have a project as awesome as this I would advise you make one.
+    Omnibus is a plugin based framework for OSINT (Open-source intelligence) artifact management, collection, and research.
+  description: |
+    An Omnibus is typically a volume containing several novels or other items previously published separately. That is exactly what this project intends to be for OSINT collection, research, and artifact management. With an easy to use interactive command line interface, users are able to create sessions to investigate various artifacts such as IP addresses, domain names, email addresses, user names, file hashes, Bitcoin addresses, and even more as the project continues to grow. Since the platform is built in a modular fashion, it is simple to add new functionality and have users create their own custom modules.
+
+- name: Aleph v2
+  link: https://aleph.re/
+  quote: >
+    Aleph is a fully asynchronous open-source malware sample dissection pipeline written in Python 3 and built on top of Celery.
+  description: |
+    Aleph is made by and for threat intelligence researchers and malware reverse engineers. Using several built-in collectors (local, S3, IMAP, POP, etc.), Aleph ingests samples that are sent to workers which apply processors specific to the file type and carve out information and data. From there the extracted data is used in analyzers to run intelligence analysis and enrichment on the combined output of all processors. Data is persisted in Elasticsearch for quick access when using the web UI or CLI for queries, and scales very well when combined with the RabbitMQ and Celery back-end components. Check out the website for more information on this project and future releases!

@@ -19,16 +19,13 @@ linkedin_username: adamswanda
 about_title: About Me
 about_profile_image: images/profile.jpg
 about_content: | # this will include new lines to allow paragraphs
-  Hi, my name's Adam and I'm a hacker. I currently live in the Washinton D.C. metro area I work as a Principal Threat Intelligence Analyst at a pretty cool technology company. Outside of work I love to develop new projects in Python, write short fiction stories, sketch/draw/paint in all sorts of ways (pencil, charcoal, pastels, etc.), and occasionally do the whole "outdoors" things people seem to be raving about.
+  Hi, my name's Adam and I'm a hacker. I currently live in the Washinton D.C. metro area I work as a Principal Threat Intelligence Analyst at a pretty cool technology company.
 
   I am highly proficient in: <mark>Threat Intelligence</mark>, <mark>Malware Analysis & Reverse Engineering</mark>, and <mark>Python development.</mark>
 
-# More Section
-more_title: A Little More About Me
-more_content: | # this will include new lines to allow paragraphs
   When I'm not hunting bad guys or writing code, some of my other interests and hobbies are:
    - Writing short fiction stories
-   - Sketching
+   - Sketching (pencil, charcoals)
    - Painting (pastels)
    - 3D Printing
    - Playing with IoT devices
@@ -36,29 +33,10 @@ more_content: | # this will include new lines to allow paragraphs
    - Napping
 
 # Projects Section
-projects_title: Projects
-  - name: Omnibus
-    link: https://github.com/InQuest/Omnibus
-    github: https://github.com/InQuest/Omnibus
-    quote: >
-      Omnibus is a plugin based framework for OSINT (Open-source intelligence) artifact management, collection, and research.
-    description: |
-      An Omnibus is typically a volume containing several novels or other items previously published separately. That is exactly what this project intends to be for OSINT collection, research, and artifact management. With an easy to use interactive command line interface, users are able to create sessions to investigate various artifacts such as IP addresses, domain names, email addresses, user names, file hashes, Bitcoin addresses, and even more as the project continues to grow. Since the platform is built in a modular fashion, it is simple to add new functionality and have users create their own custom modules.
-
-  - name: Aleph v2
-    link: https://aleph.re/
-    quote: >
-      Aleph is a fully asynchronous open-source malware sample dissection pipeline written in Python 3 and built on top of Celery.
-    description: |
-      Aleph is made by and for threat intelligence researchers and malware reverse engineers. Using several built-in collectors (local, S3, IMAP, POP, etc.), Aleph ingests samples that are sent to workers which apply processors specific to the file type and carve out information and data. From there the extracted data is used in analyzers to run intelligence analysis and enrichment on the combined output of all processors. Data is persisted in Elasticsearch for quick access when using the web UI or CLI for queries, and scales very well when combined with the RabbitMQ and Celery back-end components. Check out the website for more information on this project and future releases!
+#projects_title: Projects
 
 # Experience Section
-experience_title: Experience
-  - company: Splunk Inc.
-    job_title: Principal Threat Intelligence Analyst
-    dates: November 2018 - present
-    description: |
-      Threat intelligence is a must-have for mature organizations, and Splunk is no exception. I focus on researching bad actors and create various ways to mitigate risk to the company, the employees, and customers; whether that's through proactive monitoring, threat hunting, RFIs, intelligence alerts, or any other number of processes.
+#experience_title: Experience
 
 # Footer
 footer_show_references: true
@@ -72,3 +50,16 @@ sass:
 
 plugins:
  - jekyll-seo-tag
+
+exclude : [
+  "Gemfile",
+  "Gemfile.lock",
+  "node_modules",
+  "vendor/bundle/",
+  "vendor/cache/",
+  "vendor/gems/",
+  "vendor/ruby/",
+  "lib/",
+  "scripts/",
+  "docker-compose.yml",
+  ]
