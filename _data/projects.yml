@@ -18,3 +18,12 @@
     All threat and meta data is persisted in Elasticsearch for quick access whether using the web interface or command line. Combined with the RabbitMQ and Celery back-end components, this makes for an incredibly fast, scalable, and reliable automated malware analysis pipeline.
 
     Check out the website for more information and future releases!
+
+- name: Subversor
+  link: https://www.zeroharbor.org/portfolio.html
+  quote: >
+    Automated and Distributed Privacy Enforcement for Linux & macOS Hosts
+  description: |
+    Subversor is an application to perform automated system privacy and lock-down tasks on Linux & macOS systems based on receiving various local or remote "triggers".
+     This application is inspired by projects such as the Guardian Project's Panic application, Lockwatcher, and USBKill.
+     I've taken the concept of these applications a few steps further by supporting multiple host operating systems, allowing for local and remote triggers, providing multiple secure trigger options, supporting over a dozen configurable actions, and finally adding the capability to setup Subversor in a distribute manner where a trigger on one system will send a trigger to one or more remote hosts to perform their respective lockdown actions.
